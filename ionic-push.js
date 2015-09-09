@@ -164,6 +164,7 @@ function($http, $cordovaPush, $ionicApp, $ionicPushActions, $ionicUser, $ionicCo
         }
       }, function(err) {
         console.error('$ionicPush:REGISTER_ERROR', err);
+        defer.reject(err);
       });
     }
 
